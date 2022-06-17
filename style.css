@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('/images/bg-intro-mobile.png');
+  background-image: url('https://github.com/Damilare50/zuri-resp-med-quer0/tree/master/images/bg-intro-mobile.png');
   background-color: hsl(0, 100%, 74%);
   font-size: 16px;
   text-align: center;
@@ -106,7 +106,7 @@ input {
 
 @media screen and (min-width: 376px) {
   body {
-    background-image: url('/images/bg-intro-desktop.png');
+    background-image: url('https://github.com/Damilare50/zuri-resp-med-quer0/tree/master/images/bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
     font-size: 16px;
     text-align: unset;
@@ -194,12 +194,3 @@ input {
     color: red;
   }
 }
-
-
-/* 
-pwas
-datadog
-google analytics
-decide auth - fusion auth
-decide login - wp/react
-*/
