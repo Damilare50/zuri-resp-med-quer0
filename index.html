@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <article class="text">
+      <h2>Learn to code by watching others</h2>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great but understanding how developers think is invaluable.</p>
+    </article>
+    <article class="form">
+      <button class="promo">Try it free 7 days <span>then $20/mo thereafter</span></button>
+      <form id="form">
+        <div>
+          <img src="/images/icon-error.svg" alt="error-logo" class="error-img">
+          <input type="text" name="f_name" id="f_name" placeholder="First Name">
+          <p id="f_name-error" class="error">First Name cannot be empty</p>
+        </div>
+        <div>
+          <img src="/images/icon-error.svg" alt="error-logo" class="error-img">
+          <input type="text" name="l_name" id="l_name" placeholder="Last Name">
+          <p id="l_name-error" class="error">Last Name cannot be empty</p>
+        </div>
+        <div>
+          <img src="/images/icon-error.svg" alt="error-logo" class="error-img">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <p id="email-error" class="error">Looks like this is not an email</p>
+        </div>
+        <div>
+          <img src="/images/icon-error.svg" alt="error-logo" class="error-img">
+          <input type="password" name="pass" id="pass" placeholder="Password">
+          <p id="pass-error" class="error">Password cannot be empty</p>
+        </div>
+        <button type="submit">CLAIM YOUR FREE TRIAL</button>
+        <p>By clicking the buttons, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+    </article>
+  </section>
+  <script>
+    const form_i = document.querySelector("#form")
+    form_i.onsubmit = function(e) {
+      e.preventDefault()
+      for (let i = 0; i < e.target.length - 1; i++) {
+        if (e.target[i].value == "") {
+          // console.log(e.target[i].id)
+          const inp = document.querySelector(`#${e.target[i].id}-error`)
+          inp.classList.add("show")
+          document.querySelector(`#${e.target[i].id}`).classList.add("outline")
+          const img = document.querySelectorAll('.error-img')[i].classList.add("show")
+        } else {
+          const inp = document.querySelector(`#${e.target[i].id}-error`)
+          inp.classList.remove("show")
+          document.querySelector(`#${e.target[i].id}`).classList.remove("outline")
+          const img = document.querySelectorAll('.error-img')[i].classList.remove("show")
+        }
+      }
+    }
+  </script>
+</body>
+</html>

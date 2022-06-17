@@ -1,0 +1,205 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+body {
+  background-image: url('/images/bg-intro-mobile.png');
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  text-align: center;
+  color: white; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container .text {
+  margin-bottom: 50px;
+}
+
+.container .form button.promo {
+  width: 100%;
+  background: hsl(248, 32%, 49%);
+  border: none;
+  padding: 15px 60px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  line-height: 20px;
+  color: white;
+}
+
+.container .form button.promo span {
+  font-weight: 400;
+}
+
+input {
+  display: block;
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+}
+
+.container .form form {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.container .form form button {
+  width: 100%;
+  background: hsl(154, 59%, 51%);
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.container .form form p {
+  font-weight: 400;
+  color: darkgray;
+  font-size: 14px;
+}
+
+.container .form form p span {
+  font-weight: 600;
+  color: hsl(0, 100%, 74%);
+}
+
+.error {
+  color: hsl(0, 100%, 74%) !important;
+  font-weight: 600 !important;
+  margin-top: 0;
+  float: right;
+  display: none !important;
+}
+
+.outline {
+  outline: 1px solid hsl(0, 100%, 74%);
+}
+
+.error-img {
+  position: relative;
+  top: 42px;
+  left: 90%;
+  width: 20px;
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url('/images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    text-align: unset;
+    color: white;
+  }
+  
+  .container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .container .text {
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .container .text h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .container .text p {
+    font-weight: 500;
+  }
+  
+  .container .form button.promo {
+    width: 100%;
+    background: hsl(248, 32%, 49%);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .container .form button.promo span {
+    font-weight: 400;
+  }
+  
+  input {
+    display: block;
+    width: calc(100% - 20px);
+    /* margin-bottom: 20px; */
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+  }
+  
+  .container .form form {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .container .form form button {
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .container .form form p {
+    font-weight: 400;
+    color: darkgray;
+    font-size: 14px;
+  }
+  
+  .container .form form p span {
+    font-weight: 600;
+    color: red;
+  }
+}
+
+
+/* 
+pwas
+datadog
+google analytics
+decide auth - fusion auth
+decide login - wp/react
+*/
